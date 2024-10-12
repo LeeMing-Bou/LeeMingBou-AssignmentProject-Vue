@@ -4,6 +4,7 @@ module.exports = defineConfig({
   // Call API from Server
   devServer: {
     // proxy: "http://172.23.129.202",
-    proxy: 'https://api.tfdevs.com',
+    // proxy: 'https://api.tfdevs.com',
+    // proxy: 'https://dev.to/api',
   },
 });

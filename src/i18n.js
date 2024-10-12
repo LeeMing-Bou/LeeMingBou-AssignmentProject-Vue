@@ -5,7 +5,7 @@ import { createI18n } from 'vue-i18n';
 const messages = {
   en: {
     home: 'HOME',
-    about: 'ABOUT US',
+    about: 'ABOUT ME',
     services: 'SERVICES',
     products: 'PRODUCTS',
     team: 'TEAM',
@@ -13,12 +13,11 @@ const messages = {
   },
   khm: {
     home: 'ទំព័រដើម',
-    about: 'អំពីយើង',
+    about: 'អំពីខ្ញុំ',
     services: 'សេវាកម្ម',
     products: 'ផលិតផល',
     team: 'ក្រុមការងារ',
     blog: 'ប្លុក',
-
   },
 };
 

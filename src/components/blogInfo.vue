@@ -100,7 +100,7 @@ export default {
   async created() {
     //Call API to get data
     // const response = await axios.get("/v1/courses");
-    const response = await axios.get('v1/courses');
+    const response = await axios.get('https://dev.to/api/articles');
     const course = response.data;
     this.APIBlogData = course;
     //Merging Data: When the API data is received, the static array and the API data are merged using the spread operator [...this.staticArray, ...data], ensuring that the static array elements are included first, followed by the API data elements.
