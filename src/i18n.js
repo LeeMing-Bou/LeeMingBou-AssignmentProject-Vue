@@ -15,7 +15,7 @@ const messages = {
     home: 'ទំព័រដើម',
     about: 'អំពីយើង',
     services: 'សេវាកម្ម',
-    products: 'ហេតុអ្វី',
+    products: 'ផលិតផល',
     team: 'ក្រុមការងារ',
     blog: 'ប្លុក',
 
