@@ -80,6 +80,7 @@ export default {
           title: 'book 7',
           img: require('../assets/Blog/book7.jpg'),
           hasImage: 'True',
+
         },
 
         //book8
@@ -88,14 +89,19 @@ export default {
           title: 'book 8',
           //Verify the paths used in require
           img: require('../assets/Blog/book8.jpg'),
-          hasImage: 'True',
+          hasImage: 'True'
         },
       ],
       APIBlogData: [],
     };
   },
 
-  methods: {},
+  methods: {
+
+    mounted(){
+      this.created();
+    }
+  },
 
   async created() {
     //Call API to get data
@@ -106,6 +112,7 @@ export default {
     //Merging Data: When the API data is received, the static array and the API data are merged using the spread operator [...this.staticArray, ...data], ensuring that the static array elements are included first, followed by the API data elements.
     this.APIBlogData = [...this.dummyData, ...course];
     console.log('APIBlogData', this.APIBlogData);
+    console.log('User.profile_image', this.APIBlogData[9].user);
   },
 };
 </script>
