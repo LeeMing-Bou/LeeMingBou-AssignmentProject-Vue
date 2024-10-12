@@ -12,7 +12,7 @@
         aria-expanded="false"
         aria-label="Toggle navigation"
       >
-        <span class="mdi mdi-menu"></span>
+        <span class="navbar-toggler-icon"></span>
       </button>
       <!--END BUTTON-->
       <div class="collapse navbar-collapse" id="navbarCollapse">
