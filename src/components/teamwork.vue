@@ -3,7 +3,7 @@
   <section id="team" class="our_team section-padding">
     <div class="container">
       <div class="team-content">
-        <h1 class="font-moonspace-special">Meet Our Team</h1>
+        <h1 class="font-moonspace-special">{{ $t(`Meet_Our_Team`) }}</h1>
         <div class="container px-4 py-5">
           <div class="row g-4 py-5 row-cols-1 row-cols-lg-3">
             <div v-for="(team, index) in TeamInfo" :key="index" class="col d-flex align-items-start">
@@ -33,7 +33,7 @@
         </div>
       </div>
       <div class="row">
-        <h1 class="font-moonspace-special">Development Team</h1>
+        <h1 class="font-moonspace-special">{{ $t(`Development_Team`) }}</h1>
         <!-- Development Team -->
         <div
           v-for="(devinfo, index) in devTeam"

@@ -3,7 +3,7 @@
   <section id="about" class="about_area section-padding">
     <div class="container">
       <div class="section-title text-center">
-        <h1 class="font-moonspace-special">ABOUT ME</h1>
+        <h1 class="font-moonspace-special">{{ $t(`ABOUT_ME`) }}</h1>
         <p class="font-moonspace" style="text-align: center !important;">
           Hi! My name is
           <span style="color: greenyellow">LeeMing Bou</span>
@@ -29,7 +29,7 @@
           data-wow-offset="0"
         >
           <div class="about_info">
-            <h2 class="font-moonspace-special">Additional Information</h2><br>
+            <h2 class="font-moonspace-special">{{ $t(`Additional_Information`) }}</h2><br>
             <p class="font-moonspace">
               Currently, I have such a great opportunity to study the Professional course that organized by the MPTC as a "FULLSTACK DEVELOPMENT" course THE
               SUBJECTS THAT I HAVE LEARNED AT CADT AS A FULL STACK DEVELOPMENT are including
@@ -183,7 +183,7 @@
   <section id="resume" class="resume_area section-padding">
     <div class="container">
       <div class="section-title text-center">
-        <h1 class="font-moonspace-special">EDUCATIONS</h1>
+        <h1 class="font-moonspace-special">{{ $t(`EDUCATIONS`) }}</h1>
         <p class="font-moonspace" style="text-align: center !important">
           Education is significant wealth that is priceless
         </p>
@@ -195,7 +195,7 @@
           data-wow-delay="0.2s"
           data-wow-offset="0"
         >
-          <h4 class="timeline_title">Education</h4>
+          <h4 class="timeline_title">{{ $t(`Education`) }}</h4>
           <div class="single_timeline">
             <h4>Royal University of Phnom Penh</h4>
             <span class="active_year">2016 ~ 2020</span>
@@ -227,7 +227,7 @@
           data-wow-delay="0.3s"
           data-wow-offset="0"
         >
-          <h4 class="timeline_title">Work Experiences</h4>
+          <h4 class="timeline_title">{{ $t(`Work_Experiences`) }}</h4>
           <div class="single_timeline">
             <h4>Mobile C&C Inc</h4>
             <span class="active_year">2020 ~ 2023</span>
@@ -273,7 +273,7 @@
         />
       </div>
       <div class="col-lg-6">
-        <h1 class="display-5 fw-bold text-body-emphasis lh-1 mb-3 font-moonspace-special">MY ENTERTAIMENT</h1>
+        <h1 class="display-5 fw-bold text-body-emphasis lh-1 mb-3 font-moonspace-special">{{ $t(`MY_ENTERTAINMENT`) }}</h1>
         <p class="font-moonspace">
           I like to play badminton the most because of researching I have found one of this sports is the safety sport
           ever that has less accident during competition. Moreover, this sport is good for everyone to play in and enjoy

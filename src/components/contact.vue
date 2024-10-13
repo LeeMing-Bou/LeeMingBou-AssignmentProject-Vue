@@ -3,7 +3,7 @@
   <section id="contact" class="contact_us section-padding">
     <div class="container">
       <div class="section-title text-center">
-        <h1 class="font-moonspace-special">contact</h1>
+        <h1 class="font-moonspace-special">{{ $t(`Contact`) }}</h1>
         <p class="font-moonspace" style="text-align: center !important">
           After reviewing, if you are interesting in something on our services or Product, DO NOT Hesitate to contact us
         </p>

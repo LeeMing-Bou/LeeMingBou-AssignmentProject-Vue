@@ -82,7 +82,7 @@ export default {
   color: brown;
   font-size: 1.5rem;
   text-transform: capitalize;
-  width: 300px;
+  width: 250px;
   height: 200px;
   text-wrap: wrap;
   /* overflow: hidden;

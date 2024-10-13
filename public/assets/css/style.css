@@ -25,15 +25,12 @@ Version      : 1.0
 * 01.GENERAL STYLE
 * ----------------------------------------------------------------------------------------
 */
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
 
 .font-moonspace {
-    font-size: 1.3rem;
+    font-size: 1.1rem;
     text-align: left;
     text-transform: capitalize;
-    font-family: "Noto Sans Mono", monospace;
+    font-family: "Roboto Mono", monospace;
     font-optical-sizing: auto;
     font-style: normal;
     color: #C0C0C0;
@@ -42,7 +39,7 @@ Version      : 1.0
 .font-moonspace-special {
     text-align: center;
     text-transform: capitalize;
-    font-family: "Noto Sans Mono", monospace;
+    font-family: "Roboto Mono", monospace;
     font-optical-sizing: auto;
     font-style: normal;
     text-decoration: underline;

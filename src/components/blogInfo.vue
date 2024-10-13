@@ -1,6 +1,6 @@
 <template>
   <h1 class="font-moonspace-special">
-    WELCOME TO MY BLOG
+    {{ $t(`WELCOME_TO_MY_BLOG`) }}
   </h1>
   <BlogContents
     v-for="(blogData, index) in APIBlogData"

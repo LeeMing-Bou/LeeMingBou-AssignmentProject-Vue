@@ -12,7 +12,7 @@
         aria-expanded="false"
         aria-label="Toggle navigation"
       >
-        <span class="navbar-toggler-icon"></span>
+        <span class="navbar-toggler-icon" style="background-color: #C0C0C0 !important;"></span>
       </button>
       <!--END BUTTON-->
       <div class="collapse navbar-collapse" id="navbarCollapse">
@@ -51,12 +51,12 @@
       <div class="row">
         <div class="col-lg-8 col-sm-12 col-xs-12">
           <div class="about_me_content">
-            <span class="welcome">WELCOME TO MY PORTFOLIO</span>
+            <span class="welcome font-moonspace-special">WELCOME TO MY PORTFOLIO</span>
             <br />
             <h1
-              class="typewrite"
+              class="typewrite font-moonspace" style="text-align: center !important;"
               data-period="2000"
-              data-type='[ "Name: LeeMing BOU", "Contact: +855 012 345 678", "Email: pozzzming123@gamil.com", "Address: Phnom Penh", "Position: Student"]'
+              data-type='[ "Name: LeeMing BOU", "Contact: +855 012 345 678", "Email: pozzzming123@gmail.com", "Address: Phnom Penh", "Position: Student"]'
             >
               <span class="wrap"></span>
             </h1>
