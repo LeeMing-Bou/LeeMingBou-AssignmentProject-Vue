@@ -81,7 +81,7 @@
             <h3 class="title">Software Development</h3>
             <p class="font-moonspace">
               We develop software solutions that address your specific business needs and challenges,
-              ensuring a perfect fit for your operations.
+              ensuring a perfect fit for your operations and convenient to use.
             </p>
           </div>
         </div>
@@ -503,7 +503,7 @@
                 <li>10 users included</li>
                 <li>2 GB of storage</li>
                 <li>Email support</li>
-                <li>Help center access or Remote</li>
+                <li>Help center access</li>
               </ul>
               <button type="button" class="w-100 btn btn-lg btn-primary">Get started</button>
             </div>

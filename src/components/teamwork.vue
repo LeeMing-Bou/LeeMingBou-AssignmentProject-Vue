@@ -6,25 +6,7 @@
         <h1 class="font-moonspace-special">Meet Our Team</h1>
         <div class="container px-4 py-5">
           <div class="row g-4 py-5 row-cols-1 row-cols-lg-3">
-            <div class="col d-flex align-items-start">
-              <div
-                class="icon-square text-body-emphasis bg-body-secondary d-inline-flex align-items-center justify-content-center fs-4 flex-shrink-0 me-3"
-              >
-                <svg class="bi" width="1em" height="1em">
-                  <use xlink:href="#toggles2"></use>
-                </svg>
-              </div>
-              <div>
-                <h3 class="fs-2 font-moonspace-special sub-header-team">Our Mission</h3>
-                <br />
-                <p class="font-moonspace">
-                  Welcome to our team page! We are a dedicated group of professionals committed to delivering innovative
-                  solutions and exceptional results. Our diverse expertise and collaborative spirit drive the success of
-                  our projects and the satisfaction of our clients.
-                </p>
-              </div>
-            </div>
-            <div class="col d-flex align-items-start">
+            <div v-for="(team, index) in TeamInfo" :key="index" class="col d-flex align-items-start">
               <div
                 class="icon-square font-moonspace-special bg-body-secondary d-inline-flex align-items-center justify-content-center fs-4 flex-shrink-0 me-3"
               >
@@ -33,31 +15,18 @@
                 </svg>
               </div>
               <div>
-                <h3 class="fs-2 text-body-emphasis sub-header-team">Our Vision</h3>
+                <h3 class="fs-2 text-body-emphasis sub-header-team">{{ team.header }}</h3>
                 <br />
-                <p class="font-moonspace">
-                  We envision a future where technology seamlessly integrates with daily life, enhancing productivity,
-                  creativity, and connectivity. Our goal is to be at the forefront of this transformation, leading the
-                  way with cutting-edge solutions that make a meaningful impact on society and the global community.
+                <p v-if="team.isTurnText == true" class="font-moonspace">
+                  {{ team.shortText }}
                 </p>
-              </div>
-            </div>
-            <div class="col d-flex align-items-start">
-              <div
-                class="icon-square text-body-emphasis bg-body-secondary d-inline-flex align-items-center justify-content-center fs-4 flex-shrink-0 me-3"
-              >
-                <svg class="bi" width="1em" height="1em">
-                  <use xlink:href="#tools"></use>
-                </svg>
-              </div>
-              <div>
-                <h3 class="fs-2 font-moonspace-special sub-header-team">Join Us</h3>
+                <p v-if="team.isTurnText !== true" class="font-moonspace">
+                  {{ team.fullText }}
+                </p>
                 <br />
-                <p class="font-moonspace">
-                  We are excited about the future and invite you to join us on this journey. Whether you are a potential
-                  client, partner, or team member, we look forward to collaborating with you to create a brighter and
-                  more innovative future.
-                </p>
+                <button class="w-5 btn btn-sm btn-primary" @click="toggleReadMore(index)">
+                  {{ team.isTurnText ? 'Read More' : 'Read Less' }}
+                </button>
               </div>
             </div>
           </div>
@@ -65,7 +34,10 @@
       </div>
       <div class="row">
         <h1 class="font-moonspace-special">Development Team</h1>
+        <!-- Development Team -->
         <div
+          v-for="(devinfo, index) in devTeam"
+          :key="index"
           class="col-lg-3 col-sm-6 col-xs-12 wow fadeInUp"
           data-wow-duration="1s"
           data-wow-delay="0.1s"
@@ -73,28 +45,12 @@
         >
           <div class="single-team">
             <div class="img">
-              <img src="assets/img/team/team1.jpg" class="img-fluid" alt="" />
+              <img :src="devinfo.img" class="img-fluid" alt="" />
             </div>
             <div class="team-content">
-              <h3 class="font-moonspace-special">Mr.John</h3>
-              <p class="font-moonspace" style="text-align: center !important">Team Lead of Developer</p>
-            </div>
-          </div>
-        </div>
-        <!-- END COL -->
-        <div
-          class="col-lg-3 col-sm-6 col-xs-12 wow fadeInUp"
-          data-wow-duration="1s"
-          data-wow-delay="0.2s"
-          data-wow-offset="0"
-        >
-          <div class="single-team">
-            <div class="img">
-              <img src="assets/img/team/team2.jpg" class="img-fluid" alt="" />
-            </div>
-            <div class="team-content">
-              <h3 class="font-moonspace-special">Mrs.Siri</h3>
-              <p class="font-moonspace" style="text-align: center !important">Database Manager</p>
+              <h3 class="font-moonspace-special">{{ devinfo.name }}</h3>
+              <p class="font-moonspace" style="text-align: center !important">{{ devinfo.position }}</p>
+              <!-- Social Info -->
               <div class="container">
                 <ul class="button-socials col-md-4 justify-content-end list-unstyled d-flex">
                   <li class="ms-3">
@@ -147,55 +103,11 @@
                   </li>
                 </ul>
               </div>
+              <!-- End Social Info -->
             </div>
           </div>
         </div>
-        <!-- END COL -->
-        <div
-          class="col-lg-3 col-sm-6 col-xs-12 wow fadeInUp"
-          data-wow-duration="1s"
-          data-wow-delay="0.3s"
-          data-wow-offset="0"
-        >
-          <div class="single-team">
-            <div class="img">
-              <img src="assets/img/team/team3.jpg" class="img-fluid" alt="" />
-            </div>
-            <div class="team-content">
-              <h3 class="font-moonspace-special">Mr.Asus</h3>
-              <p class="font-moonspace" style="text-align: center !important">Network Manager</p>
-            </div>
-          </div>
-        </div>
-        <!-- END COL -->
-        <div
-          class="col-lg-3 col-sm-6 col-xs-12 wow fadeInUp"
-          data-wow-duration="1s"
-          data-wow-delay="0.4s"
-          data-wow-offset="0"
-        >
-          <div class="single-team">
-            <div class="img">
-              <img src="assets/img/team/team4.jpg" class="img-fluid" alt="" />
-            </div>
-            <div class="team-content">
-              <h3 class="font-moonspace-special">Mr.Change</h3>
-              <p class="font-moonspace" style="text-align: center !important">Ux/Ui Designer</p>
-            </div>
-            <!-- <ul class="social">
-                <li>
-                  <a href="#" class="facebook"><i class="fa fa-facebook"></i></a>
-                </li>
-                <li>
-                  <a href="#" class="twitter"><i class="fa fa-twitter"></i></a>
-                </li>
-                <li>
-                  <a href="#" class="instagram"><i class="fa fa-instagram"></i></a>
-                </li>
-              </ul> -->
-          </div>
-        </div>
-        <!-- END COL -->
+        <!-- Development Team -->
       </div>
       <!-- END ROW -->
     </div>
@@ -203,6 +115,70 @@
   </section>
   <!-- END TEAM -->
 </template>
+
+<script>
+export default {
+  data() {
+    return {
+      TeamInfo: [
+        {
+          header: 'Our Mission',
+          isTurnText: true,
+          fullText: `Welcome to our team page! We are a dedicated group of professionals committed to delivering innovative
+                      solutions and exceptional results. Our diverse expertise and collaborative spirit drive the success of
+                      our projects and the satisfaction of our clients.`,
+          shortText: 'Welcome to our team page! We are a dedicated group of professionals',
+        },
+        {
+          header: 'Our Vision',
+          isTurnText: true,
+          fullText: `We Envision A Future Where Technology Seamlessly Integrates With Daily Life, Enhancing Productivity, Creativity, And Connectivity. Our Goal Is To Be At The Forefront Of This Transformation, Leading The Way With Cutting-Edge Solutions That Make A Meaningful Impact On Society And The Global Community.`,
+          shortText: 'We Envision A Future Where Technology Seamlessly Integrates With Daily Life',
+        },
+        {
+          header: 'Join Us',
+          isTurnText: true,
+          fullText: `We are excited about the future and invite you to join us on this journey. Whether you are a potential
+                  client, partner, or team member, we look forward to collaborating with you to create a brighter and
+                  more innovative future.`,
+          shortText: 'We are excited about the future and invite you to join us on this journey',
+        },
+      ],
+
+      devTeam: [
+        {
+          name: `Mr. Mac`,
+          position: `Team Lead Developer`,
+          img: `assets/img/team/team1.jpg`,
+        },
+        {
+          name: `Mrs. ASUS`,
+          position: `Database Manager`,
+          img: `assets/img/team/team2.jpg`,
+        },
+        {
+          name: `Mr. DELL`,
+          position: `Cyber Security Manager`,
+          img: `assets/img/team/team3.jpg`,
+        },
+        {
+          name: `Mrs. Apple`,
+          position: `UX/UI Design Manager`,
+          img: `assets/img/team/team4.jpg`,
+        },
+      ],
+    };
+  },
+  methods: {
+    //Array check with index
+    toggleReadMore(index) {
+      //Dynamic changed True False Condition
+      this.TeamInfo[index].isTurnText = !this.TeamInfo[index].isTurnText;
+      console.log('ReadMore', !this.TeamInfo.isTurnText);
+    },
+  },
+};
+</script>
 
 <style scoped>
 .font-moonspace {
@@ -216,6 +192,6 @@
   text-decoration: underline whitesmoke 3px;
 }
 .button-socials {
-  margin: 20px 80px;
+  margin: 20px 100px;
 }
 </style>
