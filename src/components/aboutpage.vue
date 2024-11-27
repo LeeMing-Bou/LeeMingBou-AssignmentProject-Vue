@@ -6,7 +6,7 @@
         <h1 class="font-moonspace-special">{{ $t(`ABOUT_ME`) }}</h1>
         <p class="font-moonspace" style="text-align: center !important;">
           Hi! My name is
-          <span style="color: greenyellow">LeeMing Bou</span>
+          <span style="color: greenyellow">LeeMing Bou and Bou LeeMing</span>
           .
         </p>
       </div>
